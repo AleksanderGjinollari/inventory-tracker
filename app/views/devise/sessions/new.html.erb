@@ -1,6 +1,6 @@
 <section class="form-auth text-center form-signin">
 
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { data: { turbo: false} } ) do |f| %>
 
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
     <label for="inputEmail" class="sr-only"></label>

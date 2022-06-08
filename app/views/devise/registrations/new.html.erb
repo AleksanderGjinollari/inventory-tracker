@@ -1,6 +1,6 @@
 <section class="form-auth text-center form-signin">
 
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { data: { turbo: false} } ) do |f| %>
   <h1 class="h3 mb-3 fw-normal">Please Sign up</h1>
   <%= render "devise/shared/error_messages", resource: resource %>
     <%= f.text_field :first_name, autofocus: true, class: "form-control", placeholder: "First Name" %>
