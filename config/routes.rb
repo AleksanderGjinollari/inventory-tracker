@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :accounts
-  get 'dashboard/index'
+  get "/dashboard" => "dashboard#index", as: :dashboard
   get 'dashboard/items'
   get 'dashboard/reports'
   resources :items
